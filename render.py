@@ -20,5 +20,5 @@ def animate_model(model):
 
 
 if __name__ == "__main__":
-    model = Model("african_head.obj")
+    model = Model("assets/african_head.obj")
     animate_model(model)

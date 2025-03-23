@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
@@ -36,7 +38,8 @@ def update(frame, model, ax, speeds):
     rotated_vertices = np.dot(model.get_vertices_array(), R.T)
 
     # Compute new face normals and lighting
-    new_model = Model("african_head.obj")  # Reload to keep face connectivity
+    # new_model = Model("african_head.obj")  # Reload to keep face connectivity
+    new_model = deepcopy(model)
     new_model.vertices = rotated_vertices.tolist()
     normals = new_model.compute_normals()
     intensities = apply_lighting(normals)
