@@ -3,7 +3,7 @@
 This project renders a **3D model of a head** from a Wavefront `.obj` file. The model is **rotated around all three axes at different speeds** and is **shaded using Lambertian lighting**, giving it a realistic light-dark effect based on surface orientation.
 
 ## Demo  
-![Rotating Head Model](assets/demo.mp4)
+![Rotating Head Model](assets/demo.gif)
 
 ## Features  
 - **OBJ File Parsing**: Reads and processes the 3D head model.  
